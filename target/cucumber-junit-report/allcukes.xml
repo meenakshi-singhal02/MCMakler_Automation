@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="451.622318">
+<testcase classname="Scenario_1_Create advertisements" name="As a user when Im on the list view I want to able to create new advertisements." time="26.775191">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "22".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_10_Create and Update advertisement use Enter key to submit" name="As a user, after I update an advertisement, I should see the updated entry in the list." time="43.768947">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Press enter key.........................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "22".passed
+When Select one of the record in list view and click on the "AdvertisementName" "HeroKuAppAdd".passed
+And I enter Add "NewHeroKuAppAdd"...........................................passed
+And I enter Street "NewHeroKuStreet"........................................passed
+And I enter Rooms "4".......................................................passed
+And I enter Price "23"......................................................passed
+And Press enter key.........................................................passed
+Then Verify advertisement displayed successfully "NewHeroKuAppAdd" "NewHeroKuStreet" "4" "23".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_2_Edit_Advertisement" name="As a user when Im on the list view I want to able to create new advertisements." time="24.600869">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "22".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_2_Edit_Advertisement" name="As a user, when I am on the list view, I would like to click on an entry in the list to edit it." time="23.534155">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When Select one of the record in list view and click on the "AdvertisementName" "HeroKuAppAdd".passed
+Then The Advertisement detail screen should open, All fields should be editable..passed
+And Cancel advertisement....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_2_Edit_Advertisement" name="As a user, when I am on the list view, I would like to click on an entry in the list to edit it. 2" time="23.024363">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When Select one of the record in list view and click on the "Street" "HeroKuStreet".passed
+Then The Advertisement detail screen should open, All fields should be editable..passed
+And Cancel advertisement....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_2_Edit_Advertisement" name="As a user, when I am on the list view, I would like to click on an entry in the list to edit it. 3" time="24.622893">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When Select one of the record in list view and click on the "Rooms" "3".....passed
+Then The Advertisement detail screen should open, All fields should be editable..passed
+And Cancel advertisement....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_2_Edit_Advertisement" name="As a user, when I am on the list view, I would like to click on an entry in the list to edit it. 4" time="27.226795">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When Select one of the record in list view and click on the "Price" "22"....passed
+Then The Advertisement detail screen should open, All fields should be editable..passed
+And Cancel advertisement....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_3_Check price format" name="As a user, when I'm on the advertisement form view, I must provide a price with a proper format." time="20.967035">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'Invalid price')]&quot;}&#10;  (Session info: chrome=56.0.2924.87)&#10;  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 68 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'dlumsin9161001', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\msin91\AppData\Local\Temp\scoped_dir7808_21571}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: d37f81ac55e8cff4bb4f1f12d1f76d6b&#10;*** Element info: {Using=xpath, value=//div[contains(text(),'Invalid price')]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:361)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)&#13;&#10;&#9;at McProj.Pages.AdvertisementPage.verifyErrorWarning(AdvertisementPage.java:107)&#13;&#10;&#9;at McProj.Mc.TestSteps.verifyWarningMessage(TestSteps.java:112)&#13;&#10;&#9;at ✽.Then I verify warning message &quot;Invalid price&quot;(Scenario3.feature:15)&#13;&#10;"><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "test"....................................................passed
+Then I verify warning message "Invalid price"...............................passed
+And I enter Price "-23".....................................................passed
+Then I verify warning message "Invalid price"...............................failed
+And I enter Price "12"......................................................skipped
+And Save advertisement......................................................skipped
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "12".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Invalid price')]"}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 68 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'dlumsin9161001', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\msin91\AppData\Local\Temp\scoped_dir7808_21571}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: d37f81ac55e8cff4bb4f1f12d1f76d6b
+*** Element info: {Using=xpath, value=//div[contains(text(),'Invalid price')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at McProj.Pages.AdvertisementPage.verifyErrorWarning(AdvertisementPage.java:107)
+	at McProj.Mc.TestSteps.verifyWarningMessage(TestSteps.java:112)
+	at ✽.Then I verify warning message "Invalid price"(Scenario3.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Scenario_4_Check advertisement format" name="As a user, when I'm on the advertisement form view, I must provide a Advertisement with a proper format." time="26.210274">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "$$"........................................................passed
+Then I verify warning message "Alphabets and numerals only".................passed
+And I enter Add "HeroKuStreetAdvertisementNameEnterVeryLongNameMoreThan50Character".passed
+Then I verify warning message "Max length reached"..........................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "18"......................................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "18".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_5_Check save button status" name="As a user when Im on the advertisement form view, the save button is not active as long the form is not valid." time="34.918663">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+Then I verify Save button status is "false".................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+Then I verify Save button status is "false".................................passed
+And I enter Rooms "3".......................................................passed
+Then I verify Save button status is "false".................................passed
+And I enter Price "18"......................................................passed
+Then I verify Save button status is "true"..................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "18".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_7_Update advertisement" name="As a user after I update an advertisement I should see the updated entry in the list." time="36.60609">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "HeroKuAppAdd"..............................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "HeroKuAppAdd" "HeroKuStreet" "3" "22".passed
+When Select one of the record in list view and click on the "AdvertisementName" "HeroKuAppAdd".passed
+And I enter Add "NewHeroKuAppAdd"...........................................passed
+And I enter Street "NewHeroKuStreet"........................................passed
+And I enter Rooms "4".......................................................passed
+And I enter Price "23"......................................................passed
+And Save advertisement......................................................passed
+Then Verify advertisement displayed successfully "NewHeroKuAppAdd" "NewHeroKuStreet" "4" "23".passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="" time="16.438665">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "" and true if want to delete.passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="As a user, when I am on the list view, I can sort the list entries by name, in ascending and descending order." time="23.732205">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "AbcasName".................................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="As a user, when I am on the list view, I can sort the list entries by name, in ascending and descending order. 2" time="24.284064">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "BaseName"..................................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="As a user, when I am on the list view, I can sort the list entries by name, in ascending and descending order. 3" time="26.168929">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "CanonName".................................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="As a user, when I am on the list view, I can sort the list entries by name, in ascending and descending order. 4" time="26.594989">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+When I click on button to add advertisement.................................passed
+And I enter Add "JhonName"..................................................passed
+And I enter Street "HeroKuStreet"...........................................passed
+And I enter Rooms "3".......................................................passed
+And I enter Price "22"......................................................passed
+And Save advertisement......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Scenario_9_Sort advertisement" name="As a user when Im on the list view I can sort the list entries by name in ascending and descending order." time="22.148191">
+<system-out><![CDATA[Given Launch App or delete existing advertisement "url" and false if want to delete.passed
+And I am on website herokuapp...............................................passed
+And Click on arrow..........................................................passed
+Then Verify sequency of Advertisements "AbcasName" "BaseName" "CanonName" "JhonName".passed
+And Click on arrow..........................................................passed
+Then Verify sequency of Advertisements "JhonName" "CanonName" "BaseName" "AbcasName".passed
+]]></system-out>
+</testcase>
+</testsuite>
