@@ -68,8 +68,8 @@ public enum DriverType implements IDriverSetup {
 		public WebDriver getDriverObject(DesiredCapabilities dc) {
 			// TODO Auto-generated method stub
 			WebDriver driver = null;
-			final String USERNAME = "meenakshisinghal1";
-			  final String AUTOMATE_KEY = "zJHaxsMskytW1xxJ19qH";
+			final String USERNAME = "mcsmallerautomat1";
+			  final String AUTOMATE_KEY = "6DM4Dp8hjBSGgo1npqsy";
 			  final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 			try {
 				 driver = new RemoteWebDriver(new URL(URL), dc);
@@ -85,7 +85,7 @@ public enum DriverType implements IDriverSetup {
 			// TODO Auto-generated method stub
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setPlatform(Platform.WINDOWS);
-			capabilities.setCapability("build", "JUnit - Sample");
+			capabilities.setCapability("build", "Automation_BrowserStack");
 			return capabilities;
 		}
 		
