@@ -3,6 +3,7 @@ package McProj.drivers;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -82,12 +83,9 @@ public enum DriverType implements IDriverSetup {
 
 		public DesiredCapabilities getDesiredCapabilities() {
 			// TODO Auto-generated method stub
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability("browser", "IE");
-			capabilities.setCapability("browser_version", "7.0");
-			capabilities.setCapability("os", "Windows");
-			capabilities.setCapability("os_version", "XP");
-			capabilities.setCapability("browserstack.debug", "true");
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			capabilities.setPlatform(Platform.WINDOWS);
+			capabilities.setCapability("build", "JUnit - Sample");
 			return capabilities;
 		}
 		
